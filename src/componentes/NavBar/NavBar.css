@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    width: 99vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(66, 66, 66);
+    color: #bdbdbd;
+    border-radius: 5px;
+}
+
+.logo{
+    margin-left: 1%;
+}
