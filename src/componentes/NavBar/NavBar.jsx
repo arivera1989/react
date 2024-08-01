@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <img className='logo' src={viteLogo} alt="" />
-        <h1>Tienda OnLine</h1>
+        <h1>Tienda KISA</h1>
         <CartWidget />
     </div>
   )

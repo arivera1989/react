@@ -1,9 +1,4 @@
-.saludo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
+.loading {
+ color: black !important;
+ background-color: aliceblue !important;
 }
