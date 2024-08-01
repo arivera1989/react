@@ -1,16 +1,17 @@
-.item-card{
+.item-card2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 25%;
-    background-color: white;
+    justify-content: center;
+    width: 20%;
+    background-color: white !important;
     color: #101010;
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .item-card img {
     width: 80%;
 }
@@ -26,5 +27,23 @@ img {
 button {
     margin-bottom: 12px;
     background-color: black !important;
+    color: white !important;
+}
+
+.ver-detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important;
+    color: white !important;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 30px;
+    text-align: center; 
+    border-radius: 8px;
+}
+
+.ver-detalle:hover{
+    background-color: #c5b505 !important;;
     color: white !important;
 }

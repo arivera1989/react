@@ -1,3 +1,13 @@
-img {
+.item-detail{
+    margin-left: 30px;
+}
+
+.img-prod {
+    max-width: 50%;
     border-radius: 10px;
+}
+
+.btn-comprar{
+    background-color: white !important;
+    color: black !important;
 }
