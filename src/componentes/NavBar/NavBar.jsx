@@ -1,7 +1,7 @@
 import  CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 import viteLogo from '/vite.svg'
-import { Link } from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -18,13 +18,13 @@ const Navbar = () => {
             <Link to={'/categoria/calzado'}>Calzado</Link>
           </li>
           <li>
-          <Link to={'/categoria/electronica'}>Electrónica</Link>
+            <Link to={'/categoria/hogar'}>Hogar & Deco</Link>
           </li>
           <li>
-            <Link to={'/categoria/hogar'}>Hogar</Link>
+          <Link to={'/categoria/tech'}>Tech</Link>
           </li>
           <li>
-          <Link to={'/categoria/ropa'}>Ropa</Link>
+          <Link to={'/categoria/vestimenta'}>Vestimenta</Link>
           </li>
         </ul>
         <CartWidget />
