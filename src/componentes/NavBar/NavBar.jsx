@@ -1,10 +1,12 @@
-import  CartWidget from "../CartWidget/CartWidget";
+import { useContext } from 'react'
+import  CartWidget from "../CartWidget/CartWidget"
 import './NavBar.css';
 import viteLogo from '/vite.svg'
-import {Link, useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom'
 
 
 const Navbar = () => {
+  
   return (
     <div className='navbar'>
         <Link to='/'>
@@ -27,7 +29,9 @@ const Navbar = () => {
           <Link to={'/categoria/vestimenta'}>Vestimenta</Link>
           </li>
         </ul>
-        <CartWidget />
+        <Link to={'/cart'}>
+          <CartWidget />
+        </Link>
     </div>
   )
 }

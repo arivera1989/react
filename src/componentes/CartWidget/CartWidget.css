@@ -1,8 +1,16 @@
 .container-carrito{
     margin-right: 3%;
+    display: flex;
+}
+
+.badge-carrito{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
 }
 
 .icon-carrito{
     font-size: 2rem;
     color: rgb(199, 186, 0);
+    margin-right: 10px;
 }
