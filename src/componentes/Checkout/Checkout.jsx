@@ -1,15 +1,38 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import { db } from "../../services/firebaseConfig"
-import { addDoc } from "firebase/firestore"
+import { addDoc, collection } from "firebase/firestore"
+import { CartContext } from "../../context/cartContext"
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("")
     const [email, setEmail] = useState("")
     const [domicilio, setDomicilio] = useState("")
+    const [pedidoid, setPedidoid] = useState("")
+    const { cart } = useContext(CartContext)
 
- const handleSubmit=(e)=> {
+    const ordenFormateada = {
+        pedido: cart,
+        comprador: nombre,
+        email,
+        domicilio
+    }
+
+
+ const handleSubmit= async (e) => {
         e.preventDefault()
-        addDoc()
+        const ordenRef = collection(db, "ordenes")
+        const ordenId = await addDoc(ordenRef, ordenFormateada)
+        setPedidoid(ordenId.id)
+    }
+
+    if(pedidoid){
+        return (
+        <>
+            <h3>Gracias por tu compra! ❤️​</h3>
+            <h4>Tu pedido lo identificado con el siguiente código: {pedidoid} 👈</h4>
+            <h4>En breve nos pondremos en contacto 😊​</h4>
+        </>
+        )
     }
 
     return (
