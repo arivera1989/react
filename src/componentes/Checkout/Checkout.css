@@ -1,0 +1,15 @@
+.contenedor-check{
+    text-align: center;
+    display: block;
+}
+
+.btn-confirmar{
+    background-color: rgb(54, 54, 54) !important;
+    color: white !important;
+    display: block;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5%;
+    margin-left: 45%;
+}

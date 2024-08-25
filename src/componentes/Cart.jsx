@@ -19,7 +19,7 @@ const Cart = () => {
     }
 
     return (
-        <div className='contenedor-tarjetas2'>
+        <div className='contenedor-tarjetas'>
             {
                 cart.map(e => (
                     <CartItem key={e.id} producto={e} />
@@ -27,7 +27,7 @@ const Cart = () => {
             }
             <button className="btn-vaciar" onClick={vaciarCarro}>Vaciar carrito</button>
             <Link to='/checkout'>
-                <button className="btn-vaciar">Realizar pedido</button>
+                <button className="btn-pedido">Realizar pedido</button>
             </Link>
         </div>
     );
