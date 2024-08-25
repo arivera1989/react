@@ -18,22 +18,21 @@ const Cart = () => {
         )
     }
   return (
-    <>
-    {
-        cart.length > 0 &&
-        cart.map(e=> {
-            return(
-            <CartItem key={e.id} producto = {e}/>
-            )
-        })
-    }
-    <button className="btn-vaciar" onClick={()=>vaciarCarro()}>Vaciar carrito</button>
-    <Link to='/checkout'>
-        <button className="btn-vaciar" >Realizar pedido</button>
-    </Link>
-    
-    </>
+    <div className='contenedor-tarjetas2'>
+        {
+            cart.length > 0 &&
+            cart.map(e=> {
+                return(
+                <CartItem key={e.id} producto = {e}/>
+                )
+            })
+        }
+        <button className="btn-vaciar" onClick={()=>vaciarCarro()}>Vaciar carrito</button>
+        <Link to='/checkout'>
+            <button className="btn-vaciar" >Realizar pedido</button>
+        </Link>
+    </div>
   )
-}
+
 
 export default Cart
